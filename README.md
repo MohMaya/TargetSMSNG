@@ -228,6 +228,7 @@ Questions:
 
   For above input, the output is 200
   ```
+
 16. There are N pots. Every pot has some water in it. They may be partially filled. Every pot is associated with overflow number O which tell how many minimum no. of stones required for that pot to overflow. The crow knows O1 to On(overflow no. for all the pots). Crow wants some K pots to be overflow. So the task is the minimum number of stones he can make K pots overflow in the worst case.
   ```
   An array of overflow no--. {1,...On}
@@ -236,6 +237,7 @@ Questions:
   ```
   Let say two pots are there with overflow no.s {5,58}, and the crow has to overflow one pot(k=1). So crow will put 5 stones in the pot with overflow no.(58), it will not overflow, then he will put them in the pot with overflow no.(5), hence the total no. of stones to make overflow one pot is=10.
   What is the best algorithm to do it?
+
 17. Given n balloons, indexed from 0 to n-1. Each balloon is painted with a number on it represented by array nums. You are asked to burst all the balloons. If the you burst balloon i you will get nums[left] * nums[i] * nums[right] coins. Here left and right are adjacent indices of i. After the burst, the left and right then becomes adjacent.
   Find the maximum coins you can collect by bursting the balloons wisely.
   Note:
@@ -250,18 +252,29 @@ Questions:
 
   nums = [3,1,5,8] –> [3,5,8] –> [3,8] –> [8] –> [] coins = 3*1*5 + 3*5*8 + 1*3*8 + 1*8*1 = 167
   ```
+
 18. Dijkstra code.
+
 19. Kahn’s algorithm.
+
 20. Topological Sort.
+
 21. How to implement a stack using BST
+
 22. Write a program to convert char \*mac_address to int array.
 Eg mac_address =”ab\:cd:ef:12:34:56″ to
 result= [ab, cd, ef, 12,34,56]
+
 23. Write a MergeSort for Two Different Sorted Link List… Emphasis on TO and SO with all Error Conditions..
+
 24. Stock Buy Sell to Maximize Profit
+
 25. Next greater number set digits
+
 26. Smallest Positive missing number
+
 27. Kadane’s Algorithm
+
 28. A binary matrix of nxm was given, you have to toggle any column k number of times so that you can get the maximum number of rows having all 1’s.
   for eg, n=3, m=3,
 ```
@@ -273,6 +286,7 @@ result= [ab, cd, ef, 12,34,56]
 ```
   if k=2, then we will toggle column 2 and 3 once and we will get rows 1 and 3 with 1 1 1 and 1 1 1 i.e. all 1’s so answer is 2 as there are 2 rows with all 1’s.
   if k=3, then we will toggle column 2 thrice and we will get row 2 with 1 1 1 i.e. all 1’s so answer is 1 as there is 1 row with all 1’s.
+
 29. Given an integer ‘K’ and a tree in string format. We had to print the sum of all elements at Kth level from root.
   For example:-
 ```
@@ -296,14 +310,17 @@ Output: 14
 Given a range form s to e, you need to find number of products that would sell, leaving out the products that contains atmost ’k’ ominous numbers.
 
 Input: First line contains the number of test cases, followed buy the range s to e, 1
+
 31. A Research team want to establish a research center in a region where they found some rare-elements. They want to make it closest to all the rare-elements as close as possible so that they can reduce overall cost of research over there. It is given that all the rare-element’s location is connected by roads. It is also given that Research Center can only be build on road. Team decided to assign this task to a coder. If you feel you have that much potential..
   Here is the Task :- Find the shortest of the longest distance of research center from given locations of rare-elements.
   Locations are given in the matrix cell form where 1 represents roads and 0 no road..
   Number of rare-element and their location was also given(number<=5)
   and order of square matrix was less than equal to (20).
+
 32. A Doctor travels from a division to other division where divisions are connected like a graph(directed graph) and the edge weights are the probabilities of the doctor going from that division to other connected division but the doctor stays 10mins at each division now there will be given time and had to find the division in which he will be staying by that time and is determined by finding division which has high probability.
   Input is number of test cases followed by the number of nodes, edges, time after which we need to find the division in which he will be there, the edges starting point, end point, probability.
   Note: If he reaches a point where there are no further nodes then he leaves the lab after 10 mins and the traveling time is not considered and during that 10min at 10th min he will be in next division, so be careful.
+
 33. Fishing Spots: 1 to N
   3 Gates with gate position and number of fishermen waiting to get in
   Distance between consecutive spots = distance between gate and nearest spot = 1 m.
@@ -311,4 +328,5 @@ Input: First line contains the number of test cases, followed buy the range s to
   There could be 2 spots closest to the gate. Assign only 1 spot to the last fisherman in such a way that we get minimum walking distance. For rest of the fishermen, ignore and assign any one.
   Write a program to return sum of minimum distance need to walk for fishermen.
   Note : The problem can be solved using Recursion and Backtracking by considering all possible combinations.
+
 34.
