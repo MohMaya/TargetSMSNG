@@ -198,7 +198,7 @@ Questions:
   Now the to go from (x1,y1) to (x2,y2) is abs(x1-x2)+abs(y1-y2).
   The main problem here is to find minimum distance to reach spaceship from source to destination co-ordinate using any number of warm-hole. It is ok if you wont use any wormhole.
   Hint:
-  You can make graph which contain edge between all points and put cost of that edge. Now apply dijstra algorithm to find minimum distance between source to destination co-ordinate of spaceship.
+  You can make graph which contain edge between all points and put cost of that edge. Now apply djikstra algorithm to find minimum distance between source to destination co-ordinate of spaceship.
   Here the main catch is that the cost to pass through wormhole can be zero so you have to take care while making graph matrix.
 
   14. There is an island surrounded by oil mines. You will be given n companies and m oil mines having values. You have to distribute the mines to “n” companies in a fair manner. Remember the companies can have oil mines adjacent to each other and not in between of each other. After distributing them compute the difference of oil mines from the company getting highest and company getting lowest. This number should be minimum.(then only the distribution can be termed as fair).
