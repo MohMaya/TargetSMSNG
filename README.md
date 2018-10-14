@@ -246,3 +246,15 @@ Return 167
 
 nums = [3,1,5,8] –> [3,5,8] –> [3,8] –> [8] –> [] coins = 3*1*5 + 3*5*8 + 1*3*8 + 1*8*1 = 167
 ```
+17. Dijkstra code.
+18. Kahn’s algorithm.
+19. Topological Sort.
+20. How to implement a stack using BST
+21. Write a program to convert char \*mac_address to int array.
+Eg mac_address =”ab:cd:ef:12:34:56″ to
+result= [ab, cd, ef, 12,34,56]
+22. Write a MergeSort for Two Different Sorted Link List… Emphasis on TO and SO with all Error Conditions..
+23. Stock Buy Sell to Maximize Profit
+24. Next greater number set digits
+25. Smallest Positive missing number
+26. Kadane’s Algorithm
