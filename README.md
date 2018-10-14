@@ -196,3 +196,53 @@ The main problem here is to find minimum distance to reach spaceship from source
 Hint:
 You can make graph which contain edge between all points and put cost of that edge. Now apply dijstra algorithm to find minimum distance between source to destination co-ordinate of spaceship.
 Here the main catch is that the cost to pass through wormhole can be zero so you have to take care while making graph matrix.
+
+14. There is an island surrounded by oil mines. You will be given n companies and m oil mines having values. You have to distribute the mines to “n” companies in a fair manner. Remember the companies can have oil mines adjacent to each other and not in between of each other. After distributing them compute the difference of oil mines from the company getting highest and company getting lowest. This number should be minimum.(then only the distribution can be termed as fair).
+```
+Input
+2
+2 4
+6 13 10 2
+2 4
+6 10 13 2
+
+Output
+5
+1
+```
+
+15.  A delivery boy wants to deliver some items on his way from office to home. You need to find the optimized path he should take from office to home and deliver all his deliveries on his way. It is 101 X 101 grid. Office, home , delivery points are represented via coordinated (x,y) where 0 <= x <= 100, 0 <= y <= 100. Distance between two points (x1, y1) and (x2,y2) is computed as |x1 – x2| + |y1 – y2| .You need to find the optimized path from office to home covering all delivery locations and return the optimized path length as output. You will be given the input in the 2 lines.
+```
+First Line – N (no. of delivery locations)
+
+Second Line – (x,y) coordinates of office, followed by home, followed by all N delivery locations.
+
+3
+0 0 100 100 20 30 50 50 70 70
+
+output: The length of the optimized path taken.
+
+For above input, the output is 200
+```
+16. There are N pots. Every pot has some water in it. They may be partially filled. Every pot is associated with overflow number O which tell how many minimum no. of stones required for that pot to overflow. The crow knows O1 to On(overflow no. for all the pots). Crow wants some K pots to be overflow. So the task is the minimum number of stones he can make K pots overflow in the worst case.
+```
+An array of overflow no--. {1,...On}
+Number of pots--n
+No of pots to overflow-- k
+```
+Let say two pots are there with overflow no.s {5,58}, and the crow has to overflow one pot(k=1). So crow will put 5 stones in the pot with overflow no.(58), it will not overflow, then he will put them in the pot with overflow no.(5), hence the total no. of stones to make overflow one pot is=10.
+What is the best algorithm to do it?
+17. Given n balloons, indexed from 0 to n-1. Each balloon is painted with a number on it represented by array nums. You are asked to burst all the balloons. If the you burst balloon i you will get nums[left] * nums[i] * nums[right] coins. Here left and right are adjacent indices of i. After the burst, the left and right then becomes adjacent.
+Find the maximum coins you can collect by bursting the balloons wisely.
+Note:
+(1) You may imagine nums[-1] = nums[n] = 1. They are not real therefore you can not burst them.
+(2) 0 ≤ n ≤ 500, 0 ≤ nums[i] ≤ 100
+```
+Example:
+
+Given [3, 1, 5, 8]
+
+Return 167
+
+nums = [3,1,5,8] –> [3,5,8] –> [3,8] –> [8] –> [] coins = 3*1*5 + 3*5*8 + 1*3*8 + 1*8*1 = 167
+```
