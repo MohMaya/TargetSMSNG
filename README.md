@@ -65,3 +65,166 @@ Questions:
 
     Now, we can use the bomb to get out of this situation. After this, we can collect at most 1 coin. So maximum coins=5.
     ```
+11. Mr. Kim has to deliver refrigerators to N customers. From the office, he is going to visit all the customers and then return to his home. Each location of the office, his home, and the customers is given in the form of integer coordinates (x,y) (0≤x≤100, 0≤y≤100) . The distance between two arbitrary locations (x1, y1) and (x2, y2) is computed by |x1-x2| + |y1-y2|, where |x| denotes the absolute value of x; for instance, |3|=|-3|=3. The locations of the office, his home, and the customers are all distinct. You should plan an optimal way to visit all the N customers and return to his among all the possibilities.
+
+You are given the locations of the office, Mr. Kim’s home, and the customers; the number of the customers is in the range of 5 to 10. Write a program that, starting at the office, finds a (the) shortest path visiting all the customers and returning to his home. Your program only have to report the distance of a (the) shortest path.
+You don’t have to solve this problem efficiently. You could find an answer by looking up all the possible ways. If you can look up all the possibilities well, you will get a perfect score.
+
+<strong>Constraints</strong>
+
+5≤N≤10. Each location (x,y) is in a bounded grid, 0≤x≤100, 0≤y≤100, and x, y are integers.
+[Input]
+
+You are given 10 test cases. Each test case consists of two lines; the first line has N, the number of the customers, and the following line enumerates the locations of the office, Mr. Kim’s home, and the customers in sequence. Each location consists of the coordinates (x,y), which is reprensented by ‘x y’.
+<strong>Output</strong>
+
+Output the 10 answers in 10 lines. Each line outputs the distance of a (the) shortest path. Each line looks like ‘#x answer’ where x is the index of a test case. ‘#x’ and ‘answer’ are separated by a space.
+
+
+<strong>I/O Example</strong>
+
+Input (20 lines in total. In the first test case, the locations of the office and the home are (0, 0) and (100, 100) respectively, and the locations of the customers are (70, 40), (30, 10), (10, 5), (90, 70), (50, 20).)
+```
+5 ← Starting test case #1
+
+0 0 100 100 70 40 30 10 10 5 90 70 50 20
+6 ← Starting test case #2
+
+88 81 85 80 19 22 31 15 27 29 30 10 20 26 5 14
+
+
+10 ← Starting test case #3
+
+39 9 97 61 35 93 62 64 96 39 36 36 9 59 59 96 61 7 64 43 43 58 1 36
+```
+Output (10 lines in total)  
+```
+#1 200
+
+#2 304
+
+#3 366
+
+...
+```
+12. You are given old touch smartphone numbers having dial pad and calculator app.
+
+Aim: The goal is to type a number on the dial pad.
+
+But as the phone is old, some of the numbers and some operations can’t be touched.
+
+For eg. 2,3,5,9 keys are not responding, i.e you cannot use them
+
+But you can always make a number using other numbers and operations in Calculator. There could be multiple ways of making a number
+
+Calculator have 1-9 and +,-,\*,/,= as operations. Once you have made the number in Calculator you can copy the number and use it.
+
+You have to find the minimum number of touches required to obtain a number.
+
+Input:
+```
+There will be multiple Test cases.Each test case will consist of 4 lines
+
+
+1) The first line will consist of N, M, O
+
+N: no of keys working in Dialpad (out of 0,1,2,3,4,5,6,7,8,9)
+
+M:types of operations supported (+,-,*,/)
+
+O: Max no of touches allowed
+
+2) second line of input contains the digits that are working e.g 0,2,3,4,6.
+
+3) Third line contains the valued describing operations, 1(+),2(-),3(*),4(/)
+
+4) fourth line contains the number that we want to make .
+```
+Output:
+```
+Output contains 1 line printing the number of touches required to make the number  
+```
+```
+Sample Test Case:
+
+1                   // No of test cases
+
+5 3 5            // N ,M, O
+
+1 2 4 6 0     // digits that are working (total number of digits = N),
+
+1 2 3         // describing operations allowed (1–> ‘+’, 2–> ‘-‘, 3–> ‘*’ , 4–> ‘/’ )(total number is equals to M)
+
+5                 // number we want to make
+
+
+
+Answer 3
+```
+
+How 4? 1+4=, “=” is also counted as a touch
+
+
+```
+2nd Sample Case
+
+3                   // No of Test cases
+
+6 4 5            // N ,M, O
+
+1 2 4 6 9 8  // digits that are working (total number of digits = N),
+
+1 2 3 4        // describing operations allowed (1–> +, 2–> -, 3–> , 4–>/)
+
+91                // number we want to make
+
+6 2 4           // 2nd test case
+
+0 1 3 5 7 9
+
+1 2 4           // +, -, / allowed here
+
+28
+
+5 2 10
+
+1 2 6 7 8
+
+2 3               // -, allowed
+
+981
+
+
+
+Output:
+
+2        // 91 can be made by directly entering 91 as 1,9 digits are working, so only 2 operations
+
+5            // 35-7=, other ways are 1+3*7=
+
+9          //62*16-11=
+```
+
+
+Order of computation will be followed as symbols entered if + comes, it will be computed first
+
+
+
+One more example: let’s say 1,4,6,7,8,9 works and +,-,* works.
+
+2,3,5 and / doesn’t work.
+
+If you have to type 18-> 2 operations. (Each touch is considered an operation),br> If you have to type 5 -> ‘1+4=’ that requires 4 operations. There could be other ways to make ‘5’.
+
+13. There is one spaceship. X and Y coordinate of source of spaceship and destination spaceship is given. There are N number of wormholes each wormhole has 5 values.
+
+First 2 values are starting co-ordinate of wormhole and after that value no. 3 and 4 represents ending co-ordinate of wormhole and last 5th value is represents cost to pass through this wormhole. Now these wormholes are bi-direction.
+Now the to go from (x1,y1) to (x2,y2) is abs(x1-x2)+abs(y1-y2).
+The main problem here is to find minimum distance to reach spaceship from source to destination co-ordinate using any number of warm-hole. It is ok if you wont use any wormhole.
+
+
+
+Hint:
+
+You can make graph which contain edge between all points and put cost of that edge. Now apply dijstra algorithm to find minimum distance between source to destination co-ordinate of spaceship.
+Here the main catch is that the cost to pass through wormhole can be zero so you have to take care while making graph matrix.
