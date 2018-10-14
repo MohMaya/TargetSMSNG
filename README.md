@@ -76,29 +76,29 @@ You are given 10 test cases. Each test case consists of two lines; the first lin
 Output the 10 answers in 10 lines. Each line outputs the distance of a (the) shortest path. Each line looks like ‘#x answer’ where x is the index of a test case. ‘#x’ and ‘answer’ are separated by a space.
 <strong>I/O Example</strong>
 Input (20 lines in total. In the first test case, the locations of the office and the home are (0, 0) and (100, 100) respectively, and the locations of the customers are (70, 40), (30, 10), (10, 5), (90, 70), (50, 20).)
-```
-5 ← Starting test case #1
+  ```
+  5 ← Starting test case #1
 
-0 0 100 100 70 40 30 10 10 5 90 70 50 20
-6 ← Starting test case #2
+  0 0 100 100 70 40 30 10 10 5 90 70 50 20
+  6 ← Starting test case #2
 
-88 81 85 80 19 22 31 15 27 29 30 10 20 26 5 14
+  88 81 85 80 19 22 31 15 27 29 30 10 20 26 5 14
 
 
-10 ← Starting test case #3
+  10 ← Starting test case #3
 
-39 9 97 61 35 93 62 64 96 39 36 36 9 59 59 96 61 7 64 43 43 58 1 36
-```
-Output (10 lines in total)  
-```
-#1 200
+  39 9 97 61 35 93 62 64 96 39 36 36 9 59 59 96 61 7 64 43 43 58 1 36
+  ```
+  Output (10 lines in total)  
+  ```
+  #1 200
 
-#2 304
+  #2 304
 
-#3 366
+  #3 366
 
-...
-```
+  ...
+  ```
 12. You are given old touch smartphone numbers having dial pad and calculator app.
 Aim: The goal is to type a number on the dial pad.
 But as the phone is old, some of the numbers and some operations can’t be touched.
@@ -107,84 +107,84 @@ But you can always make a number using other numbers and operations in Calculato
 Calculator have 1-9 and +,-,\*,/,= as operations. Once you have made the number in Calculator you can copy the number and use it.
 You have to find the minimum number of touches required to obtain a number.
 Input:
-```
-There will be multiple Test cases.Each test case will consist of 4 lines
+  ```
+  There will be multiple Test cases.Each test case will consist of 4 lines
 
 
-1) The first line will consist of N, M, O
+  1) The first line will consist of N, M, O
 
-N: no of keys working in Dialpad (out of 0,1,2,3,4,5,6,7,8,9)
+  N: no of keys working in Dialpad (out of 0,1,2,3,4,5,6,7,8,9)
 
-M:types of operations supported (+,-,*,/)
+  M:types of operations supported (+,-,*,/)
 
-O: Max no of touches allowed
+  O: Max no of touches allowed
 
-2) second line of input contains the digits that are working e.g 0,2,3,4,6.
+  2) second line of input contains the digits that are working e.g 0,2,3,4,6.
 
-3) Third line contains the valued describing operations, 1(+),2(-),3(*),4(/)
+  3) Third line contains the valued describing operations, 1(+),2(-),3(*),4(/)
 
-4) fourth line contains the number that we want to make .
-```
+  4) fourth line contains the number that we want to make .
+  ```
 Output:
-```
-Output contains 1 line printing the number of touches required to make the number  
-```
-```
-Sample Test Case:
+  ```
+  Output contains 1 line printing the number of touches required to make the number  
+  ```
+  ```
+  Sample Test Case:
 
-1                   // No of test cases
+  1                   // No of test cases
 
-5 3 5            // N ,M, O
+  5 3 5            // N ,M, O
 
-1 2 4 6 0     // digits that are working (total number of digits = N),
+  1 2 4 6 0     // digits that are working (total number of digits = N),
 
-1 2 3         // describing operations allowed (1–> ‘+’, 2–> ‘-‘, 3–> ‘*’ , 4–> ‘/’ )(total number is equals to M)
+  1 2 3         // describing operations allowed (1–> ‘+’, 2–> ‘-‘, 3–> ‘*’ , 4–> ‘/’ )(total number is equals to M)
 
-5                 // number we want to make
-
-
-Answer 3
-```
-How 4? 1+4=, “=” is also counted as a touch
-```
-2nd Sample Case
-
-3                   // No of Test cases
-
-6 4 5            // N ,M, O
-
-1 2 4 6 9 8  // digits that are working (total number of digits = N),
-
-1 2 3 4        // describing operations allowed (1–> +, 2–> -, 3–> , 4–>/)
-
-91                // number we want to make
-
-6 2 4           // 2nd test case
-
-0 1 3 5 7 9
-
-1 2 4           // +, -, / allowed here
-
-28
-
-5 2 10
-
-1 2 6 7 8
-
-2 3               // -, allowed
-
-981
+  5                 // number we want to make
 
 
+  Answer 3
+  ```
+  How 4? 1+4=, “=” is also counted as a touch
+  ```
+  2nd Sample Case
 
-Output:
+  3                   // No of Test cases
 
-2        // 91 can be made by directly entering 91 as 1,9 digits are working, so only 2 operations
+  6 4 5            // N ,M, O
 
-5            // 35-7=, other ways are 1+3*7=
+  1 2 4 6 9 8  // digits that are working (total number of digits = N),
 
-9          //62*16-11=
-```
+  1 2 3 4        // describing operations allowed (1–> +, 2–> -, 3–> , 4–>/)
+
+  91                // number we want to make
+
+  6 2 4           // 2nd test case
+
+  0 1 3 5 7 9
+
+  1 2 4           // +, -, / allowed here
+
+  28
+
+  5 2 10
+
+  1 2 6 7 8
+
+  2 3               // -, allowed
+
+  981
+
+
+
+  Output:
+
+  2        // 91 can be made by directly entering 91 as 1,9 digits are working, so only 2 operations
+
+  5            // 35-7=, other ways are 1+3*7=
+
+  9          //62*16-11=
+  ```
 Order of computation will be followed as symbols entered if + comes, it will be computed first
 One more example: let’s say 1,4,6,7,8,9 works and +,-,* works.
 2,3,5 and / doesn’t work.
