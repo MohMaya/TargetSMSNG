@@ -2,7 +2,7 @@
 
 Questions:
 
-1.
+    1.
 ```
 You are given an unsorted array with both positive and negative elements. You have to find the smallest positive number missing from the array in O(n) time using constant extra space.
 
@@ -28,10 +28,15 @@ Output:
 2
 ```
 
+      2.
+```
+A binary matrix of n X m, you have to toggle any column k number of times so that you can get maximum rows having all 1.
+```
 
-2.A binary matrix of n X m, you have to toggle any column k number of times so that you can get maximum rows having all 1.
-
-3.Given a graph having edges defining the probability of going to a particular node, say edge u-v denotes the probability of going v from u. you can stay at any node for 10 minutes. Starting from node 1, on which node you will be after T minutes and with what probability.
+    3.
+```
+Given a graph having edges defining the probability of going to a particular node, say edge u-v denotes the probability of going v from u. you can stay at any node for 10 minutes. Starting from node 1, on which node you will be after T minutes and with what probability.
+```
 
 4.Find a cycle, if exists, in a directed graph. If there is none, print 0. If there is one, print the path starting from the first node of the cycle to the last. If there are more than one, print any path.
 
@@ -384,3 +389,36 @@ Input: First line contains the number of test cases, followed buy the range s to
   There could be 2 spots closest to the gate. Assign only 1 spot to the last fisherman in such a way that we get minimum walking distance. For rest of the fishermen, ignore and assign any one.
   Write a program to return sum of minimum distance need to walk for fishermen.
   Note : The problem can be solved using Recursion and Backtracking by considering all possible combinations.
+
+    34.
+```
+Given a string, your task is to find the number of patterns of form 1[0]1 where [0] represents any number of zeroes (minimum requirement is one 0) there should not be any other character except 0 in the [0] sequence.
+
+ 
+
+Input:
+The first line contains T denoting the number of testcases. Then follows description of testcases. Each case contains a string. 
+ 
+
+Output:
+For each test case, output the number of patterns.
+
+ 
+
+Constraints:
+1<=T<=20
+1<=Length of String<=2000
+
+
+Example:
+Input:
+2
+100001abc101
+1001ab010abc01001
+
+ 
+
+Output:
+2
+2
+```
