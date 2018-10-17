@@ -3,14 +3,23 @@
 Questions:
 
 1.Given an array of numbers, find whether a particular digit exist in the numbers of array.
+
 2.A binary matrix of n X m, you have to toggle any column k number of times so that you can get maximum rows having all 1.
+
 3.Given a graph having edges defining the probability of going to a particular node, say edge u-v denotes the probability of going v from u. you can stay at any node for 10 minutes. Starting from node 1, on which node you will be after T minutes and with what probability.
+
 4.Find a cycle, if exists, in a directed graph. If there is none, print 0. If there is one, print the path starting from the first node of the cycle to the last. If there are more than one, print any path.
+
 5.It was a combination of Rat in a Maze and longest subpath problem.
+
 6.Find if given graph is bipartite or not, if it is bipartite then print either white color nodes or black color nodes.
+
 7.Find a cycle in the graph.
+
 8.Find a cycle in LinkedList.
+
 9.Variation of traveling salesman solved using backtracking (Optimization on traveling salesman ).
+
 10.You’ll be given a grid as below:
     ```
     0 1 0 2 0
@@ -65,6 +74,7 @@ Questions:
 
     Now, we can use the bomb to get out of this situation. After this, we can collect at most 1 coin. So maximum coins=5.
     ```
+
 11.Mr. Kim has to deliver refrigerators to N customers. From the office, he is going to visit all the customers and then return to his home. Each location of the office, his home, and the customers is given in the form of integer coordinates (x,y) (0≤x≤100, 0≤y≤100) . The distance between two arbitrary locations (x1, y1) and (x2, y2) is computed by |x1-x2| + |y1-y2|, where |x| denotes the absolute value of x; for instance, |3|=|-3|=3. The locations of the office, his home, and the customers are all distinct. You should plan an optimal way to visit all the N customers and return to his among all the possibilities.
   You are given the locations of the office, Mr. Kim’s home, and the customers; the number of the customers is in the range of 5 to 10. Write a program that, starting at the office, finds a (the) shortest path visiting all the customers and returning to his home. Your program only have to report the distance of a (the) shortest path.
   You don’t have to solve this problem efficiently. You could find an answer by looking up all the possible ways. If you can look up all the possibilities well, you will get a perfect score.
