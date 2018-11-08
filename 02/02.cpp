@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// Solved in O(n*m^2)
 int count_normal(int **mat, int n, int m){
     int count=0;
     for (int i = 0; i < n; i++){
@@ -78,12 +78,13 @@ int main(){
         int maxCount = normalCount, toggled = -1;
         for(int i=0; i<m; i++){
             int count = count_toggled(mat, n, m, i, rowwisesum);
+            
             if(count>maxCount){
                 maxCount = count;
                 toggled = i;
             }
         }
-        cout<<"MaxRowsWithAll1 = "<<maxCount<<" Upon toggling column "<<toggled+1<<", "<<k<<" times"<<endl;
+        cout<<"\n\nMaxRowsWithAll1 = "<<maxCount<<" Upon toggling column "<<toggled+1<<", "<<k<<" times"<<endl;
     }
 
 
