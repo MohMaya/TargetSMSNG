@@ -39,6 +39,10 @@ Output:
 
    if k=3, then we will toggle column 2 thrice and we will get row 2 with 1 1 1 i.e. all 1’s so answer is 1 as there is 1 row with all 1’s.
 
+   Constraints : 
+
+   N ≤ 20 and M ≤ 10^5
+
   3. Given a graph having edges defining the probability of going to a particular node, say edge u-v denotes the probability of going v from u. you can stay at any node for 10 minutes. Starting from node 1, on which node you will be after T minutes and with what probability.
 
   4. Find a cycle, if exists, in a directed graph. If there is none, print 0. If there is one, print the path starting from the first node of the cycle to the last. If there are more than one, print any path.
