@@ -45,6 +45,7 @@ for a total distanced traveled of 2+1+1+2=6.
 Thus, we print 6 on a new line.
 */
 
+#include <stdio.h>
 #include <iostream>
 #include <vector>
 #define pb push_back
@@ -58,7 +59,7 @@ bool f[N];
 vector <int> v[N],d[N];
 
 int input(){
-    scanf("%d%d",&n,&K);
+    scanf("%d%d",&n, &K);
     for (int i=0,x;i<K;i++){
         scanf("%d",&x);
         s[x]=1;

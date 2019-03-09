@@ -4,9 +4,9 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:\\Program Files (x86)\\CodeBlocks\\MinGW",
-                "C:\\Program Files (x86)\\CodeBlocks\\MinGW\\include",
-                "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/5.1.0/include/c++"
+                "C:\\MinGW\\lib\\gcc\\mingw32\\8.2.0",
+                "C:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++",
+                "C:\\MinGW\\bin"
             ],
             "defines": [
                 "_DEBUG",
