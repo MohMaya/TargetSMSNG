@@ -74,30 +74,90 @@ int input(){
     return 0;
 }
 
-int go(int x,int from){
+int go(int x,int from, int count){
+    
+    cout<<"\n\n";
+    for(int i=0; i<count; i++){
+        cout<<"   ";
+    }
+    cout<<"go("<<x<<","<<from<<")"<<endl;
+
+
     int D1=-inf;
     int D2=-inf;
 
+
     for (int i=0;i<v[x].size();i++)
-    if (v[x][i]!=from){
-        D1=max(D1,go(v[x][i],x)+d[x][i]);
-        if (D1>D2) swap(D1,D2);
-        s[x]+=s[v[x][i]];
-        if (0<s[v[x][i]] && s[v[x][i]]<K) SUM+=d[x][i];
+    {
+        if (v[x][i]!=from){
+            
+            
+                for (int i = 0; i < count; i++){
+                    cout << "   ";
+                }
+                cout<<"inside if block for vertex = "<<v[x][i]<<endl;
+                for (int i = 0; i < count; i++){
+                    cout << "   ";
+                }
+                cout << "D1 before = " << D1;
+            
+            
+            D1=max(D1,go(v[x][i],x,count+1)+d[x][i]);
+            
+                for (int i = 0; i < count; i++){
+                    cout << "   ";
+                }
+                cout<<"D1 after = "<<D1<<endl;
+            
+            
+            if (D1>D2) 
+                swap(D1,D2);
+            
+            
+                for (int i = 0; i < count; i++){
+                    cout << "   ";
+                }
+                cout << "s[x] before = " << s[x];
+            
+            
+            s[x]+=s[v[x][i]];
+                
+                for (int i = 0; i < count; i++){
+                    cout << "   ";
+                }
+                cout << "s[x] after = " << s[x]<<endl;
+            
+            if (0<s[v[x][i]] && s[v[x][i]]<K) {
+                SUM+=d[x][i];
+                for (int i = 0; i < count; i++){
+                    cout << "   ";
+                }
+                cout<<"SUM = "<<SUM<<endl<<endl;
+            }
+        }
     }
+    if (D1>0) 
+        M=max(M,D1+D2);
 
-    if (D1>0) M=max(M,D1+D2);
+    if (D2>0 && f[x])
+        M=max(M,D2);
 
-    if (D2>0 && f[x]) M=max(M,D2);
+    if (f[x]) 
+        D2=max(D2,0);
 
-    if (f[x]) D2=max(D2,0);
+
+                for (int i = 0; i < count; i++){
+                    cout << "   ";
+                }
+                cout << "returning D2 = " << D2<<"\n"<<endl;
+
 
     return D2;
 }
 
 int sol(){
-    go(1,1);
-    printf("%d\n",SUM*2-M);
+    go(5,5,0);
+    printf("\n\n%d\n",SUM*2-M);
     return 0;
 }
 
