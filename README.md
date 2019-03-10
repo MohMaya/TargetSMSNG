@@ -1,6 +1,6 @@
 # Target SAMSUNG Research Institute
 
-### Question 1 :  [x]
+### Question 1 :  [DONE]
 
 
 You are given an unsorted array with both positive and negative elements. You have to find the smallest positive number missing from the array in O(n) time using constant extra space.
@@ -53,7 +53,7 @@ N ≤ 20 and M ≤ 10^5
 > [Redundant. Refer : Question 32]
 
 
-### Question 4 : 
+### Question 4 : [DONE]
 
 Find a cycle, if exists, in a directed graph. If there is none, print 0. If there is one, print the path starting from the first node of the cycle to the last. If there are more than one, print any path.
 
@@ -67,7 +67,7 @@ Find if given graph is bipartite or not, if it is bipartite then print either wh
 
 ### Question 7 :
 
-Find a cycle in the graph. 
+Find a cycle in the graph.
 > [Refer Question 4]
 
 ### Question 8 :
@@ -83,7 +83,7 @@ Variation of traveling salesman solved using backtracking (Optimization on trave
 
 You’ll be given a grid as below:
 
-``` 
+```
 0 1 0 2 0
 
 0 2 2 2 1
@@ -174,7 +174,7 @@ Input (20 lines in total. In the first test case, the locations of the office an
 39 9 97 61 35 93 62 64 96 39 36 36 9 59 59 96 61 7 64 43 43 58 1 36
 ```
 
-Output (10 lines in total)  
+Output (10 lines in total)
 
 ```
 #1 200
@@ -211,7 +211,7 @@ There will be multiple Test cases.Each test case will consist of 4 lines
 **Output:**
 
 ```
-Output contains 1 line printing the number of touches required to make the number  
+Output contains 1 line printing the number of touches required to make the number
 ```
 
 **Sample Test Case:**
@@ -436,7 +436,7 @@ Given a string, your task is to find the number of patterns of form 1[0]1 where 
 
 **Input:**
 
-The first line contains T denoting the number of testcases. Then follows description of testcases. Each case contains a string. 
+The first line contains T denoting the number of testcases. Then follows description of testcases. Each case contains a string.
 
 **Output:**
 
@@ -501,10 +501,10 @@ Print the kth largest element in each line.
 
 **Example(To be used only for expected output):**
 ```
-Input: 
-1 
-7 
-50 30 20 40 70 60 80 
+Input:
+1
+7
+50 30 20 40 70 60 80
 3
 
 Output:
