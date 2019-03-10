@@ -43,7 +43,7 @@ Output:
 
    N ≤ 20 and M ≤ 10^5
 
-  3. Given a graph having edges defining the probability of going to a particular node, say edge u-v denotes the probability of going v from u. you can stay at any node for 10 minutes. Starting from node 1, on which node you will be after T minutes and with what probability.
+  3. [Redundant. Refer : Question 32]
 
   4. Find a cycle, if exists, in a directed graph. If there is none, print 0. If there is one, print the path starting from the first node of the cycle to the last. If there are more than one, print any path.
 
