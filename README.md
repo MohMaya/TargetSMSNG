@@ -26,7 +26,7 @@ Output:
 2
 ```
 
-### Question 2 : 
+### Question 2 : [DONE]
 
 
 A binary matrix of nxm was given, you have to toggle any column k number of times so that you can get the maximum number of rows having all 1’s.
@@ -48,12 +48,12 @@ if k=3, then we will toggle column 2 thrice and we will get row 2 with 1 1 1 i.e
 
 N ≤ 20 and M ≤ 10^5
 
-### Question 3 :
+### Question 3 : [DONE]
 
 > [Redundant. Refer : Question 32]
 
 
-### Question 4 :
+### Question 4 : 
 
 Find a cycle, if exists, in a directed graph. If there is none, print 0. If there is one, print the path starting from the first node of the cycle to the last. If there are more than one, print any path.
 
@@ -74,7 +74,7 @@ Find a cycle in the graph.
 
 Find a cycle in LinkedList.
 
-### Question 9 :
+### Question 9 : [DONE]
 
 Variation of traveling salesman solved using backtracking (Optimization on traveling salesman ).
 > [Refer Question 11]
@@ -141,7 +141,7 @@ x x S x x -->bomb x x S x x
 Now, we can use the bomb to get out of this situation. After this, we can collect at most 1 coin. So maximum coins=5.
 
 
-### Question 11 :
+### Question 11 : [DONE]
 
 Mr. Kim has to deliver refrigerators to N customers. From the office, he is going to visit all the customers and then return to his home. Each location of the office, his home, and the customers is given in the form of integer coordinates (x,y) (0≤x≤100, 0≤y≤100) . The distance between two arbitrary locations (x1, y1) and (x2, y2) is computed by |x1-x2| + |y1-y2|, where |x| denotes the absolute value of x; for instance, |3|=|-3|=3. The locations of the office, his home, and the customers are all distinct. You should plan an optimal way to visit all the N customers and return to his among all the possibilities. You are given the locations of the office, Mr. Kim’s home, and the customers; the number of the customers is in the range of 5 to 10. Write a program that, starting at the office, finds a (the) shortest path visiting all the customers and returning to his home. Your program only have to report the distance of a (the) shortest path. You don’t have to solve this problem efficiently. You could find an answer by looking up all the possible ways. If you can look up all the possibilities well, you will get a perfect score.
 
@@ -279,7 +279,7 @@ Output
 1			- Company1: 6+10   Comapny2: 13+2  => 16-15=1
 ```
 
-### Question 15 :
+### Question 15 : [DONE]
 
 > [Refer Question 11]
 
@@ -406,7 +406,7 @@ A company sells its products with a unique serial number on it. Company has has 
 
 Input: First line contains the number of test cases, followed buy the range s to e, 1
 
-### Question 30 :
+### Question 30 : [DONE]
 
 A Research team want to establish a research center in a region where they found some rare-elements. They want to make it closest to all the rare-elements as close as possible so that they can reduce overall cost of research over there. It is given that all the rare-element’s location is connected by roads. It is also given that Research Center can only be build on road. Team decided to assign this task to a coder. If you feel you have that much potential..
 Here is the Task :- Find the shortest of the longest distance of research center from given locations of rare-elements.
@@ -414,7 +414,7 @@ Locations are given in the matrix cell form where 1 represents roads and 0 no ro
 Number of rare-element and their location was also given(number<=5)
 and order of square matrix was less than equal to (20).
 
-### Question 31 :
+### Question 31 : [DONE]
 
 A Doctor travels from a division to other division where divisions are connected like a graph(directed graph) and the edge weights are the probabilities of the doctor going from that division to other connected division but the doctor stays 10mins at each division now there will be given time and had to find the division in which he will be staying by that time and is determined by finding division which has high probability.
 Input is number of test cases followed by the number of nodes, edges, time after which we need to find the division in which he will be there, the edges starting point, end point, probability.
@@ -430,7 +430,7 @@ There could be 2 spots closest to the gate. Assign only 1 spot to the last fishe
 Write a program to return sum of minimum distance need to walk for fishermen.
 Note : The problem can be solved using Recursion and Backtracking by considering all possible combinations.
 
-### Question 33 :
+### Question 33 : [DONE]
 
 Given a string, your task is to find the number of patterns of form 1[0]1 where [0] represents any number of zeroes (minimum requirement is one 0) there should not be any other character except 0 in the [0] sequence.
 
@@ -460,7 +460,7 @@ Output:
 2
 ```
 
-### Question 34 :
+### Question 34 : [DONE]
 
 You are given a pointer/reference to a node to be deleted in a linked list. The task is to delete the node.  Pointer/reference to head node is not given.  You may assume that the node to be deleted is not the last node.
 
@@ -485,7 +485,7 @@ Output :
 10 4 30
 ```
 
-### Question 35 :
+### Question 35 : [DONE]
 
 Given a Binary search tree. Your task is to complete the function which will return the Kth largest element without doing any modification in Binary Search Tree.
 
@@ -510,7 +510,7 @@ Input:
 Output:
 60
 ```
-### Question 36 :
+### Question 36 : [DONE]
 
 Company S has developed an industrial endoscope available to explore inner part of the decrepit water pipes.
 It is possible to explore the inner part of the pipes putting the endoscope in a certain part of the pipe.
@@ -542,7 +542,7 @@ Print the respective answer for T test cases in total for T lines. The answer is
 **Constraints**
 1≤ T ≤100 ; 1≤ N, M ≤50 ; 0≤ X < N ; 0≤ Y < M ; 1≤ L ≤ 20
 
-### Question 37 :
+### Question 37 : [DONE]
 
 Men's restroom problem : It is a well-researched fact that men in a restroom generally prefer to maximize their distance from already occupied stalls, by occupying the middle of the longest sequence of unoccupied places. For detailed version, check the following link. <br>
 Link : https://stackoverflow.com/questions/32645046/urinal-algorithm-a-simple-optimization
