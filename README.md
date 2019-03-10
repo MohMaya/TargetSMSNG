@@ -541,3 +541,10 @@ Print the respective answer for T test cases in total for T lines. The answer is
 
 **Constraints**
 1≤ T ≤100 ; 1≤ N, M ≤50 ; 0≤ X < N ; 0≤ Y < M ; 1≤ L ≤ 20
+
+### Question 37 :
+
+Men's restroom problem : It is a well-researched fact that men in a restroom generally prefer to maximize their distance from already occupied stalls, by occupying the middle of the longest sequence of unoccupied places. For detailed version, check the following link. <br>
+Link : https://stackoverflow.com/questions/32645046/urinal-algorithm-a-simple-optimization
+
+
