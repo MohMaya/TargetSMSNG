@@ -348,7 +348,7 @@ How to implement a stack using BST
 ### Question 22 :
 
 Write a program to convert char\* mac_address to int array.
-Eg: mac_address =”ab:cd:ef:12:34:56″ to
+Eg: mac_address ="ab : cd : ef : 12 : 34 : 56" to
 result= [ab, cd, ef, 12,34,56]
 
 ### Question 23 :
