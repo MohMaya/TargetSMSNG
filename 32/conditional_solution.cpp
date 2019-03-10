@@ -26,8 +26,30 @@ START_DIVISION
 */
 
 
-// ASSUMING INDEPENDENT PROBABILITIES OF EACH STATE - EZPZ
+/*
+SAMPLE
+1
+6 12 30
+0 1 0.3
+0 2 0.2
+0 5 0.5
+1 3 0.6
+1 5 0.4
+2 0 0.3
+2 4 0.7
+3 0 1
+4 3 1
+5 0 0.4
+5 3 0.2
+5 4 0.4
+0
 
+
+*/
+
+// ASSUMING CONDITIONAL PROBABILITY i.e P(D3,D2,D1) = P(D3|D2,D1)*P(D2|D1)*P(D1)
+
+//SIMPLY DO DFS
 
 #include <iostream>
 
@@ -36,15 +58,28 @@ using namespace std;
 
 int N,E,T,start;
 float adj_mat[1000][1000];
-float copy_adj_mat[1000][1000];
+float finale[1000];
+
+void go(int curr_node, float probab, int num_traversals){
+    if(num_traversals==0){
+        finale[curr_node]+=probab;
+        return;
+    }
+    for(int i=0; i<N; i++){
+        if(adj_mat[curr_node][i]>0){
+            go(i, probab*adj_mat[curr_node][i], num_traversals-1);
+        }
+    }
+}
+
 
 void solution(){
     cin>>N>>E>>T;
     for(int i=0; i<1000; i++){
         for(int j=0; j<1000; j++){
             adj_mat[i][j]=0;
-            copy_adj_mat[i][j]=0;
         }
+        finale[i]=0;
     }
 
     for(int i=0; i<E; i++){
@@ -52,29 +87,31 @@ void solution(){
         float probab;
         cin>>U>>V>>probab;
         adj_mat[U][V]=probab;
-        copy_adj_mat[U][V]=probab;
     }
     cin>>start;
 
     int num_traversals = T/10;
-    int curr_node=start;
-    while(num_traversals>0){
-        int next_node=-1;
-        int max_probab=0;
-        for(int i=0; i<N; i++){
-            if(adj_mat[curr_node][i]>max_probab){
-                max_probab=adj_mat[curr_node][i];
-                next_node=i;
-            }
-        }
-        if(next_node==-1){
-            cout<<"Exited the last lab"<<endl;
-            return;
-        }
-        curr_node=next_node;
-        num_traversals--;
+    if(num_traversals==0){
+        cout<<start<<endl;
+        return;
     }
-    cout<<"After "<<T<<" minutes, at node : "<<curr_node<<endl;
+    for(int i=0; i<N; i++){
+        if(adj_mat[start][i]>0)
+            go(i, adj_mat[start][i], num_traversals-1);
+    }
+    float max_probab=0;
+    int idx=start;
+    for(int i=0; i<N; i++){
+        cout<<finale[i]<<" ";
+        if(finale[i]>max_probab){
+            idx=i;
+            max_probab=finale[i];
+        }
+    }
+    if(max_probab==0)
+        cout<<"\nFinal Destination : Exit Lab"<<endl;
+    else
+        cout<<"\nFinal Destination : "<<idx<<endl;
 }
 
 int main(){
