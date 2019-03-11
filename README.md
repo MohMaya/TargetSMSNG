@@ -61,11 +61,11 @@ Find a cycle, if exists, in a directed graph. If there is none, print 0. If ther
 
 It was a combination of Rat in a Maze and longest subpath problem.
 
-### Question 6 :
+### Question 6 :    [DONE]
 
 Find if given graph is bipartite or not, if it is bipartite then print either white color nodes or black color nodes.
 
-### Question 7 :
+### Question 7 :    [DONE]
 
 Find a cycle in the graph.
 > [Refer Question 4]
