@@ -311,7 +311,7 @@ No of pots to overflow-- k
 Let say two pots are there with overflow no.s {5,58}, and the crow has to overflow one pot(k=1). So crow will put 5 stones in the pot with overflow no.(58), it will not overflow, then he will put them in the pot with overflow no.(5), hence the total no. of stones to make overflow one pot is=10.
 What is the best algorithm to do it?
 
-### Question 17 :
+### Question 17 :   [DONE]
 
 Given n balloons, indexed from 0 to n-1. Each balloon is painted with a number on it represented by array nums. You are asked to burst all the balloons. If the you burst balloon i you will get nums[left] * nums[i] * nums[right] coins. Here left and right are adjacent indices of i. After the burst, the left and right then becomes adjacent.
 Find the maximum coins you can collect by bursting the balloons wisely.
