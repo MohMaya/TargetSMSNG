@@ -355,7 +355,7 @@ result= [ab, cd, ef, 12,34,56]
 
 Write a MergeSort for Two Different Sorted Link List… Emphasis on TO and SO with all Error Conditions..
 
-### Question 24 :
+### Question 24 :   [DONE]
 
 Stock Buy Sell to Maximize Profit
 
