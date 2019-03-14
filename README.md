@@ -420,7 +420,7 @@ A Doctor travels from a division to other division where divisions are connected
 Input is number of test cases followed by the number of nodes, edges, time after which we need to find the division in which he will be there, the edges starting point, end point, probability.
 Note: If he reaches a point where there are no further nodes then he leaves the lab after 10 mins and the traveling time is not considered and during that 10min at 10th min he will be in next division, so be careful.
 
-### Question 32 :
+### Question 32 :   [DONE]
 
 Fishing Spots: 1 to N
 3 Gates with gate position and number of fishermen waiting to get in
