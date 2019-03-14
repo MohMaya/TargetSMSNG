@@ -366,6 +366,7 @@ Next greater number set digits
 ### Question 26 :
 
 Smallest Positive missing number
+> [Refer Question 1]
 
 ### Question 27 :
 
