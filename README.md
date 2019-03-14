@@ -359,7 +359,7 @@ Write a MergeSort for Two Different Sorted Link List… Emphasis on TO and SO wi
 
 Stock Buy Sell to Maximize Profit
 
-### Question 25 :
+### Question 25 :   [DONE]
 
 Next greater number set digits
 
