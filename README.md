@@ -254,7 +254,7 @@ Order of computation will be followed as symbols entered if + comes, it will be 
 *One more example*: let’s say 1,4,6,7,8,9 works and +,-,* works. 2,3,5 and / doesn’t work.
 If you have to type 18-> 2 operations. (Each touch is considered an operation),br> If you have to type 5 -> ‘1+4=’ that requires 4 operations. There could be other ways to make ‘5’.
 
-### Question 13 :
+### Question 13 :   [DONE]
 
 There is one spaceship. X and Y coordinate of source and destination of spaceship are given. There are N number of wormholes each wormhole has 5 values. First 2 values are starting co-ordinate of wormhole and after that value no. 3 and 4 represents ending co-ordinate of wormhole and last 5th value is represents cost to pass through this wormhole. These wormholes are bi-directional.
 Now the to go from (x1,y1) to (x2,y2) is abs(x1-x2)+abs(y1-y2).
