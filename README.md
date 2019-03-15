@@ -372,7 +372,7 @@ Smallest Positive missing number
 
 Kadane’s Algorithm
 
-### Question 28 :
+### Question 28 :   [DONE]
 
 Given an integer ‘K’ and a tree in string format. We had to print the sum of all elements at Kth level from root.
 For example:-
