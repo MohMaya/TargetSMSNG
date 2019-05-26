@@ -70,7 +70,7 @@ Find if given graph is bipartite or not, if it is bipartite then print either wh
 Find a cycle in the graph.
 > [Refer Question 4]
 
-### Question 8 :
+### Question 8 : [DONE]
 
 Find a cycle in LinkedList.
 
@@ -329,7 +329,7 @@ Return 167
 nums = [3,1,5,8] –> [3,5,8] –> [3,8] –> [8] –> [] coins = 3*1*5 + 3*5*8 + 1*3*8 + 1*8*1 = 167
 ```
 
-### Question 18 :
+### Question 18 :[DONE]
 
 Dijkstra code.
 
@@ -337,7 +337,7 @@ Dijkstra code.
 
 Kahn’s algorithm.
 
-### Question 20 :
+### Question 20 : [DONE]
 
 Topological Sort.
 
