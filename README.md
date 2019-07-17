@@ -329,7 +329,7 @@ Return 167
 nums = [3,1,5,8] –> [3,5,8] –> [3,8] –> [8] –> [] coins = 3*1*5 + 3*5*8 + 1*3*8 + 1*8*1 = 167
 ```
 
-### Question 18 :
+### Question 18 :[DONE]
 
 Dijkstra code.
 
@@ -337,7 +337,7 @@ Dijkstra code.
 
 Kahn’s algorithm.
 
-### Question 20 :
+### Question 20 : [DONE]
 
 Topological Sort.
 
