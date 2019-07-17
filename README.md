@@ -70,7 +70,7 @@ Find if given graph is bipartite or not, if it is bipartite then print either wh
 Find a cycle in the graph.
 > [Refer Question 4]
 
-### Question 8 :
+### Question 8 : [DONE]
 
 Find a cycle in LinkedList.
 
