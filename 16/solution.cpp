@@ -80,26 +80,12 @@ void merge_sort(int l, int r){
 int main(){
     cin>>num_pots;
     for(int i=0; i<num_pots; i++){
-        int x;
-        cin>>x;
-        overflow_numbers[i]=x;
+        cin>>overflow_numbers[i];
     }
     cin>>k;
     merge_sort(0,num_pots-1);
 
-
-
-    for(int i=num_pots-1; i>0; i--){
-        overflow_numbers[i] = max(0,overflow_numbers[i]-overflow_numbers[i-1]);
-    }
-
-
-
-    int total_stones=0;
-    for(int i=0; i<k; i++){
-        total_stones+=(overflow_numbers[i]*(num_pots-i));
-    }
-    cout<<"\nTotal Stones Required : "<<total_stones<<endl;
+    cout<<"\nTotal Stones Required : "<<overflow_numbers[k-1]*num_pots<<endl;
 
 }
 
